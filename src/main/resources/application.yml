@@ -1,0 +1,17 @@
+server:
+  port: 8080
+  
+spring:
+  application:
+    name: CRUD-API-MYSQL
+  datasource:
+    url: jdbc:mysql://localhost:3306/Bookstore?allowPublicKeyRetrieval=true&useSSL=false
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 7033667871
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+       
